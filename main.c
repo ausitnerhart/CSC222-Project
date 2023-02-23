@@ -66,13 +66,26 @@ struct ShellCommand ParseCommandLine(char* input){
 		} else{
 			sc.argv[sc.argc] = strdup(token);
 			sc.argc++;
-			sc.argv = (char**)realloc(sc.argv, (sc.argc + 1) * sizeof(char*));
+			sc.argv = (char**)realloc(sc.argv, (sc.argc + 2) * sizeof(char*));
 		}
 
 		sc.argv[sc.argc] = NULL;
+		token = strtok(NULL, "\t");
 
 	}
 	return sc;
+}
+
+void ChangeDir(struct ShellCommand command){
+	if(command.argc != 2) {
+		fprintf(stderr, "Error: cd command requires exactly one argument\n");
+		return;
+	}
+
+	int status = chdir(command.argv[1]);
+	if(status != 0) {
+		perror("Error changing directory");
+	}
 }
 
 void ExecuteCommand(struct ShellCommand command){
@@ -89,7 +102,7 @@ void ExecuteCommand(struct ShellCommand command){
 
 		if(command.outputRedirect){
 		}
-
+		
 		execvp(command.argv[0], command.argv);
 		perror("Error executing command");
 		exit(1);
@@ -116,8 +129,13 @@ int main(){
 
 		command = ParseCommandLine(input);
 		free(input);
-
-		ExecuteCommand(command);
+		
+		if(strcmp(command.argv[0], "cd") == 0){
+			ChangeDir(command);
+			
+		} else{
+			ExecuteCommand(command);
+		}
 	}
 
 	exit(0);
