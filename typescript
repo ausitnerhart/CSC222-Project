@@ -1,57 +1,26 @@
-Script started on 2023-02-07 14:24:34-06:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="120" LINES="30"]
+Script started on 2023-02-24 12:40:38-06:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="120" LINES="30"]
 [?2004hhypno@DESKTOP-6FNC9LC:~/project$ ./main
-[?2004l[?2004hhypno@DESKTOP-6FNC9LC:~/project$ cd[K[Kls
-[?2004la.out  main  main.c  readme  typescript
-[?2004hhypno@DESKTOP-6FNC9LC:~/project$ ./a.out
-[?2004l/home/hypno/project $ cd  ls
-a.out  main  main.c  readme  typescript
-/home/hypno/project $ cd Desktop
-Error executing command: No such file or directory
-/home/hypno/project $ cd --
-Error executing command: No such file or directory
-/home/hypno/project $ cd -
-Error executing command: No such file or directory
-/home/hypno/project $ cd ..
-Error executing command: No such file or directory
-/home/hypno/project $ cd .
-Error executing command: No such file or directory
-/home/hypno/project $ cd ...
-Error executing command: No such file or directory
-/home/hypno/project $ cd ..\ 
-Error executing command: No such file or directory
-/home/hypno/project $ cd hypno
-Error executing command: No such file or directory
-/home/hypno/project $ ls
-a.out  main  main.c  readme  typescript
-/home/hypno/project $ vim     pwd
-/home/hypno/project
-/home/hypno/project $ pa s
-  PID TTY          TIME CMD
-   56 pts/1    00:00:00 bash
-   59 pts/1    00:00:00 a.out
-   71 pts/1    00:00:00 ps
-/home/hypno/project $ cd /root
-Error executing command: No such file or directory
-/home/hypno/project $ cd   /home/hypno
-Error executing command: No such file or directory
-/home/hypno/project $ ^[[A^[[A^[[A^[[A^[[B^[[B^[[B                            cd ^[[A\       /home
-Error executing command: No such file or directory
-/home/hypno/project $ ^[[A
-Error executing command: No such file or directory
-/home/hypno/project $ where  is ps
-whereis: not enough arguments
-Try 'whereis --help' for more information.
-/home/hypno/project $ /bin/ps/  u
-  PID TTY          TIME CMD
-   56 pts/1    00:00:00 bash
-   59 pts/1    00:00:00 a.out
-   77 pts/1    00:00:00 ps
+[?2004l/home/hypno/project $ ls
+222-Project  a.out  main  main.c  ps.out  readme  typescript
+/home/hypno/project $ ls -l
+total 48
+drwxr-xr-x 3 hypno hypno  4096 Feb 19 00:26 222-Project
+-rwxr-xr-x 1 hypno hypno 17184 Feb  7 14:23 a.out
+-rwxr-xr-x 1 hypno hypno 17264 Feb 24 12:35 main
+-rw-r--r-- 1 hypno hypno  2687 Feb 24 12:29 main.c
+-rw-r--r-- 1 hypno hypno     0 Feb 23 12:47 ps.out
+-rw-r--r-- 1 hypno hypno     0 Feb  7 18:41 readme
+-rw-r--r-- 1 hypno hypno     0 Feb 24 12:40 typescript
+/home/hypno/project $ ls    wc -l main.c
+wc: invalid option -- ' '
+Try 'wc --help' for more information.
+/home/hypno/project $ wc main.c
+ 145  308 2687 main.c
+/home/hypno/project $ ^[[A^[[A^[[A^[[A^[[A                    wc    ls - l  l -a-  -h
+ls: invalid option -- ' '
+Try 'ls --help' for more information.
 /home/hypno/project $ ^C
-[?2004hhypno@DESKTOP-6FNC9LC:~/project$ vim typescript
-[?2004l[?1000h[?1049h[22;0;0t[>4;2m[?1h=[?2004h[?1004h[1;30r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[30;1H"typescript" 0L, 0B[2;1H▽[6n[2;1H  [3;1HPzz\[0%m[6n[3;1H           [1;1H[>c]10;?]11;?[2;1H[94m~                                                                                                                       [3;1H~                                                                                                                       [4;1H~                                                                                                                       [5;1H~                                                                                                                       [6;1H~                                                                                                                       [7;1H~                                                                                                                       [8;1H~                                                                                                                       [9;1H~                                                                                                                       [10;1H~                                                                                                                       [11;1H~                                                                                                                       [12;1H~                                                                                                                       [13;1H~                                                                                                                       [14;1H~                                                                                                                       [15;1H~                                                                                                                       [16;1H~                                                                                                                       [17;1H~                                                                                                                       [18;1H~                                                                                                                       [19;1H~                                                                                                                       [20;1H~                                                                                                                       [21;1H~                                                                                                                       [22;1H~                                                                                                                       [23;1H~                                                                                                                       [24;1H~                                                                                                                       [25;1H~                                                                                                                       [26;1H~                                                                                                                       [27;1H~                                                                                                                       [28;1H~                                                                                                                       [29;1H~                                                                                                                       [m[30;103H0,0-1[9CAll[1;1H[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[?25h[?25l[30;93H^[[1;1H[30;93H  [1;1H[30;93H^[[1;1H[30;93H  [1;1H[?25h[?25l[30;93H:[1;1H[30;1H[K[30;1H:[?25hwq[?25l[?1000l[?2004l[>4;m"typescript"
-[97m[41mWARNING: The file has been changed since reading it!!![?2004h[>4;2m[?1000h[?1000l[m
-[32mDo you really want to write to it (y/n)?[?25h[mn[?1000h[?1000l
-[32mPress ENTER or type command to continue[?1000h[?25l[1;1H[m[3L[2;1H[94m~                                                                                                                       [3;1H~                                                                                                                       [m[30;1H[K[30;103H0,0-1[9CAll[1;1H[?25h[?25l[30;93H^[[1;1H[30;93H  [1;1H[30;93H^[[1;1H[30;93H  [1;1H[?25h[?25l[30;93H:[1;1H[30;93H[K[30;1H:[?25hwq[?25l[30;3H[K[30;3H[?25h[?25l[30;2H[K[30;2H[?25hq[?25l[?1000l[?2004l[>4;m[23;2t[23;1t[30;1H[K[30;1H[?1004l[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t[?2004hhypno@DESKTOP-6FNC9LC:~/project$ vim typescript[7P./a.outvim typescript[Kexit
+[?2004hhypno@DESKTOP-6FNC9LC:~/project$ exit
 [?2004lexit
 
-Script done on 2023-02-07 14:28:29-06:00 [COMMAND_EXIT_CODE="0"]
+Script done on 2023-02-24 12:41:18-06:00 [COMMAND_EXIT_CODE="130"]

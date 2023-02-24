@@ -65,14 +65,14 @@ struct ShellCommand ParseCommandLine(char* input){
 			sc.outputFile = strdup(nextToken);
 		} else{
 			sc.argv[sc.argc] = strdup(token);
-			sc.argc++;
 			sc.argv = (char**)realloc(sc.argv, (sc.argc + 2) * sizeof(char*));
 		}
-
-		sc.argv[sc.argc] = NULL;
+		
+		sc.argc++;
 		token = strtok(NULL, "\t");
 
 	}
+	sc.argv[sc.argc] = NULL;
 	return sc;
 }
 
@@ -101,6 +101,9 @@ void ExecuteCommand(struct ShellCommand command){
 		}
 
 		if(command.outputRedirect){
+			FILE* fileOut = fopen(command.outputFile, "w");
+			dup2(fileno(fileOut), 1);
+			fclose(fileOut);
 		}
 		
 		execvp(command.argv[0], command.argv);
